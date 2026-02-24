@@ -1,4 +1,4 @@
-# Activity 1: Simple Modularisation
+# Task 1: Simple Modularisation
 
 ## Learning Objectives
 By the end of this activity, you should be able to:

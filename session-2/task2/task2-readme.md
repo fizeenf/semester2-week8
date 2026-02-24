@@ -1,4 +1,4 @@
-# Activity 2: Creating a Makefile
+# Task 2: Creating a Makefile
 
 ## Learning Objectives
 By the end of this activity, you should be able to:
