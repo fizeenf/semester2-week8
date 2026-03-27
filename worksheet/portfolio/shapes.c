@@ -34,7 +34,7 @@ float triangleArea (Triangle Trn){
     //area using three points 
     float x0 = Trn.p[0].x,  y0 = Trn.p[0].y, x1= Trn.p[1].x, y1 = Trn.p[1].y, x2 = Trn.p[2].x, y2 = Trn.p[2].y;
     float area = 0.5f * ((x0 * (y1-y2)) + (x1 * (y2-y0)) + (x2 * (y0-y1)));
-    return -area; //for some reason, was returning the negative value so i switched it so it would work
+    return -area; //keeps returning the negative value so negation added
 }
 
 bool samePoint(Point pnt1, Point pnt2){
