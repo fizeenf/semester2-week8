@@ -4,12 +4,16 @@
 
 #include "shapes.h"
 
+
+//creating a point from xnad y coordinates 
+
 Point makePoint( float x, float y ) {
     Point pnt;
     pnt.x = x, pnt.y = y;
     return pnt;
 }
 
+//creating a line from two points 
 Line makeLine(Point pnt1, Point pnt2){
     Line ln;
     ln.p[0] = pnt1, ln.p[1] = pnt2;
@@ -17,6 +21,7 @@ Line makeLine(Point pnt1, Point pnt2){
     
 }
 
+//creating a triangle using three points
 Triangle makeTriangle(Point pnt1, Point pnt2, Point pnt3){
     Triangle Trn;
     Trn.p[0] = pnt1, Trn.p[1] = pnt2, Trn.p[2] = pnt3;
@@ -34,7 +39,7 @@ float triangleArea (Triangle Trn){
     //area using three points 
     float x0 = Trn.p[0].x,  y0 = Trn.p[0].y, x1= Trn.p[1].x, y1 = Trn.p[1].y, x2 = Trn.p[2].x, y2 = Trn.p[2].y;
     float area = 0.5f * ((x0 * (y1-y2)) + (x1 * (y2-y0)) + (x2 * (y0-y1)));
-    return -area; //keeps returning the negative value so negation added
+    return fabsf(area);
 }
 
 bool samePoint(Point pnt1, Point pnt2){
